@@ -1,0 +1,6 @@
+submissions/
+bots/
+staff_bots/
+match_results/
+
+*.pyc
