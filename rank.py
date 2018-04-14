@@ -19,15 +19,18 @@ def removeExtension(file_name):
     return file_name
 
 def getOutput(file_a, file_b):
-    output = str(subprocess.check_output(['python2.7',
-                        'capture.py',
-                        '-r',
-                        join(SUBMISSIONS_DIR, file_a),
-                        '-b',
-                        join(SUBMISSIONS_DIR, file_b),
-                        '-l',
-                        'RANDOM',
-                        '-q']))
+    try:
+        output = str(subprocess.check_output(['python2.7',
+                            'capture.py',
+                            '-r',
+                            join(SUBMISSIONS_DIR, file_a),
+                            '-b',
+                            join(SUBMISSIONS_DIR, file_b),
+                            '-l',
+                            'RANDOM',
+                            '-q']))
+    except:
+        return 'invalid'
     return output
 
 def log_output(file_a, file_b, output):
