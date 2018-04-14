@@ -79,10 +79,10 @@ def write_output(file_a, file_b):
                 match_output = getOutput(file_b, file_a)
                 if 'Red team wins' in match_output:
                     f.write(file_name_b + '\n')
-                    print(file_name_b, 'won!')
+                    print(file_name_b, 'beat', file_name_a)
                 elif 'Blue team wins' in match_output:
                     f.write(file_name_a + '\n')
-                    print(file_name_a, 'won!')
+                    print(file_name_a, 'beat', file_name_b)
                 elif 'Tie game!' in match_output:
                     f.write('tied' + '\n')
                     print('Tied game.')
