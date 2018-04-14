@@ -4,7 +4,7 @@
 # educational purposes provided that (1) you do not distribute or publish
 # solutions, (2) you retain this notice, and (3) you provide clear
 # attribution to UC Berkeley, including a link to http://ai.berkeley.edu.
-# 
+#
 # Attribution Information: The Pacman AI projects were developed at UC Berkeley.
 # The core projects and autograders were primarily created by John DeNero
 # (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
@@ -400,18 +400,19 @@ class CaptureRules:
             redCount += agentState.numReturned
           else:
             blueCount += agentState.numReturned
-        
-        if blueCount >= foodToWin:#state.getRedFood().count() == MIN_FOOD:
-          print 'The Blue team has returned at least %d of the opponents\' dots.' % foodToWin
-        elif redCount >= foodToWin:#state.getBlueFood().count() == MIN_FOOD:
-          print 'The Red team has returned at least %d of the opponents\' dots.' % foodToWin
-        else:#if state.getBlueFood().count() > MIN_FOOD and state.getRedFood().count() > MIN_FOOD:
-          print 'Time is up.'
-          if state.data.score == 0: print 'Tie game!'
-          else:
-            winner = 'Red'
-            if state.data.score < 0: winner = 'Blue'
-            print 'The %s team wins by %d points.' % (winner, abs(state.data.score))
+
+      print 'Time is up.'
+      # 1 pellet shouldn't make the difference i guess especially since maps are randomized...
+      # this threshold is hardcoded which isn't good but it usually makes sure
+      # that two equal files have all tied games
+      if abs(redCount - blueCount) <= 1:
+        print 'Tie game!'
+      else:
+        if redCount > blueCount:
+          winner = 'Red'
+        else:
+          winner = 'Blue'
+        print 'The %s team wins by %d points.' % (winner, abs(state.data.score))
 
   def getProgress(self, game):
     blue = 1.0 - (game.state.getBlueFood().count() / float(self._initBlueFood))
@@ -534,7 +535,7 @@ class AgentRules:
           agent.numCarrying += 1
           break # the above should only be true for one agent...
 
-      # do all the score and food grid maintainenace 
+      # do all the score and food grid maintainenace
       #state.data.scoreChange += score
       state.data.food = state.data.food.copy()
       state.data.food[x][y] = False
@@ -575,7 +576,7 @@ class AgentRules:
     # ok so agentState is this:
     if (agentState.numCarrying == 0):
       return
-    
+
     # first, score changes!
     # we HACK pack that ugly bug by just determining if its red based on the first position
     # to die...
@@ -887,9 +888,9 @@ def readCommand( argv ):
     else:
       l = layout.getLayout( options.layout )
     if l == None: raise Exception("The layout " + options.layout + " cannot be found")
-    
+
     layouts.append(l)
-    
+
   args['layouts'] = layouts
   args['length'] = options.time
   args['numGames'] = options.numGames

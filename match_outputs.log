@@ -1,0 +1,248 @@
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n1\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n0\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n2\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n0\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b"\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n2\nBlue team starts\nThe Blue team has returned at least 28 of the opponents' dots.\n"
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n2\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n0\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n0\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n2\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n2\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n2\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n2\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n3\nRed team starts\nTime is up.\nThe Red team wins by 28 points.\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n3\nBlue team starts\nTime is up.\nThe Blue team wins by 28 points.\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n1\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n3\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n2\nRed team starts\nTime is up.\nThe Blue team wins by 3 points.\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n2\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n0\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n0\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n2\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n3\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n0\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n0\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n1\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n3\nRed team starts\nTime is up.\nThe Blue team wins by 30 points.\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n0\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n1\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n3\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n2\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n3\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n2\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n3\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n1\nBlue team starts\nTime is up.\nThe Red team wins by 1 points.\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n2\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n3\nBlue team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n2\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n\nBlue team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+b'\nRed team ./sample_submissions/test1.py with {}:\nLoading Team: ./sample_submissions/test1.py\nArguments: {}\n\nBlue team ./sample_submissions/test2.py with {}:\nLoading Team: ./sample_submissions/test2.py\nArguments: {}\n1\nRed team starts\nTime is up.\nTie game!\n'
+--------
+
+Output for match test1.py vs. test2.py
+invalid
+--------
+
