@@ -122,6 +122,11 @@ class ReflexCaptureAgent(CaptureAgent):
     a counter or a dictionary.
     """
     return {'successorScore': 1.0}
+def mmin(l):
+  if len(l) > 0:
+    return min(l)
+  else:
+    return 0
 class OffensiveReflexAgent(ReflexCaptureAgent):
   """
   A reflex agent that seeks food. This is an agent
@@ -129,11 +134,6 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
   but it is by no means the best or only way to build an offensive agent.
   """
   def getFeatures(self, gameState, action):
-    def mmin(l):
-      if len(l) > 0:
-        return min(l)
-      else:
-        return 0
     features = util.Counter()
     successor = self.getSuccessor(gameState, action)
     foodList = self.getFood(successor).asList()

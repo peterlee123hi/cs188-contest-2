@@ -4,7 +4,7 @@
 # educational purposes provided that (1) you do not distribute or publish
 # solutions, (2) you retain this notice, and (3) you provide clear
 # attribution to UC Berkeley, including a link to http://ai.berkeley.edu.
-# 
+#
 # Attribution Information: The Pacman AI projects were developed at UC Berkeley.
 # The core projects and autograders were primarily created by John DeNero
 # (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
@@ -13,11 +13,11 @@
 """
 Students' Names: Shreya Sahoo
 Contest Number: 2
-Description of Bot: This bot contains a defensive and offensive agent. 
-The defensive agent protects its team side of the board and eats ghosts. 
-However, if there aren't any invaders, it will go to the otherside of the board and 
-help the offensive bot eat the other pellets. The features I used were the successor score, how many invaders were present, and how 
-far the agents were from food, as well as how far the offensive agent was from the capsule. 
+Description of Bot: This bot contains a defensive and offensive agent.
+The defensive agent protects its team side of the board and eats ghosts.
+However, if there aren't any invaders, it will go to the otherside of the board and
+help the offensive bot eat the other pellets. The features I used were the successor score, how many invaders were present, and how
+far the agents were from food, as well as how far the offensive agent was from the capsule.
 """
 from captureAgents import CaptureAgent
 import random, time, util
@@ -111,8 +111,8 @@ class DefensiveAgent(MainAgent):
   def getFeatures(self, gameState, action):
     """
     Returns a counter of features for the state. The important features are:
-    1. Successor Score 
-    2. How far an agent is from a capsule that its defending based on how many food pellets are left 
+    1. Successor Score
+    2. How far an agent is from a capsule that its defending based on how many food pellets are left
     3. The distance to the nearest food
     4. The distance to the nearest ghost
     """
@@ -142,7 +142,7 @@ class DefensiveAgent(MainAgent):
     if len(ghosts) > 0:
       dists = [self.getMazeDistance(myPos, a.getPosition()) for a in ghosts]
       features['closestGhost'] = min(dists)
-    if len(foodList2) > 0 and len(ghosts) > 1 and len(invaders) < len(ghosts): 
+    if len(foodList2) > 0 and len(ghosts) > 1 and len(invaders) < len(ghosts):
       myPos = successor.getAgentState(self.index).getPosition()
       minDistance = min([self.getMazeDistance(myPos, food) for food in foodList2])
       features['nearestFood'] = - minDistance
@@ -161,8 +161,8 @@ class OffensiveAgent(MainAgent):
   def getFeatures(self, gameState, action):
     """
     Returns a counter of features for the state. The important features are:
-    1. Successor Score 
-    2. How far an agent is from a capsule if the scared timer is on / off. 
+    1. Successor Score
+    2. How far an agent is from a capsule if the scared timer is on / off.
     3. The distance to the nearest food.
     4. The distance to the nearest ghost if the scared timer is on / off.
     """
@@ -171,15 +171,15 @@ class OffensiveAgent(MainAgent):
     foodList = self.getFood(successor).asList()
     features['successorScore'] = -len(foodList)
     myPos = successor.getAgentState(self.index).getPosition()
-    # agent to capsule on the otherside 
+    # agent to capsule on the otherside
     if len(self.getCapsules(gameState)) > 0:
       closestCapsule = min([self.distancer.getDistance(i, myPos) \
         for i in self.getCapsules(gameState)])
-    else: 
+    else:
       closestCapsule = 1
     features['closestCapsule'] = closestCapsule
     #nearest food
-    if len(foodList) > 0: 
+    if len(foodList) > 0:
       myPos = successor.getAgentState(self.index).getPosition()
       minDistance = min([self.getMazeDistance(myPos, food) for food in foodList])
       features['nearestFood'] = minDistance
@@ -189,14 +189,15 @@ class OffensiveAgent(MainAgent):
     enemies = [successor.getAgentState(i) for i in self.getOpponents(successor)]
     invaders = [a for a in enemies if not a.isPacman and a.getPosition() != None]
     features['numInvaders'] = len(invaders)
+    dists = [0]
     if len(invaders) > 0:
       dists = [self.getMazeDistance(myPos, a.getPosition()) for a in invaders]
       if closestCapsule > 0:
         features['closestGhost'] = -min(dists)
       else:
-        features['closestGhost'] = min(dists) 
-    else: 
-      features['closestGhost'] = min(dists) 
+        features['closestGhost'] = min(dists)
+    else:
+      features['closestGhost'] = min(dists)
     return features
   def getWeights(self, gameState, action):
     """
