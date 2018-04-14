@@ -4,5 +4,6 @@ bots/
 staff_bots/
 match_results/
 score
+.idea/
 
 *.pyc
