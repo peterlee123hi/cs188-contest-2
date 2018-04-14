@@ -3,7 +3,7 @@ from os import listdir
 from os.path import isfile, join
 
 import subprocess
-from threading import Thread
+from multiprocessing import Process
 
 SUBMISSIONS_DIR = './single_submissions/'
 NUM_TRIALS = 15
@@ -96,14 +96,14 @@ def write_output(file_a, file_b):
 if __name__ == '__main__':
     files = sorted([f for f in listdir(SUBMISSIONS_DIR) if isfile(join(SUBMISSIONS_DIR, f)) and f[-1] != 'c'])
 
-    threads = []
+    processes= []
     for i in range(len(files)):
         for j in range(i + 1, len(files)):
-            thread = Thread(target=write_output, args=(files[i], files[j]))
-            threads.append(thread)
+            process = Process(target=write_output, args=(files[i], files[j]))
+            processes.append(process)
 
-    for thread in threads:
-        thread.start()
-    for thread in threads:
-        thread.join()
+    for process in processes:
+        process.start()
+    for process in processes:
+        process.join()
 
