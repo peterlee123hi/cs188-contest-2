@@ -149,6 +149,7 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
     x_2, y_2 = int(x + vx), int(y + vy)
     # Analyze all nearby ghosts
     if myState.isPacman:
+      pos = (-1, -1)
       for ghost in captors:
         pos = ghost.getPosition()
       if (x_2, y_2) == pos:

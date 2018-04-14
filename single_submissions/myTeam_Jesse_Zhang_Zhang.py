@@ -113,6 +113,10 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
   but it is by no means the best or only way to build an offensive agent.
   """
   def getFeatures(self, gameState, action):
+    def mmin(l):
+      if len(l) > 0:
+          return min(l)
+      return 0
     features = util.Counter()
     successor = self.getSuccessor(gameState, action)
     foodList = self.getFood(successor).asList()
@@ -122,19 +126,19 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
     # Compute distance to the nearest food
     if len(foodList) > 0: # This should always be True,  but better safe than sorry
       myPos = successor.getAgentState(self.index).getPosition()
-      minDistance = min([self.getMazeDistance(myPos, food) for food in foodList])
+      minDistance = mmin([self.getMazeDistance(myPos, food) for food in foodList])
       features['distanceToFood'] = minDistance
     if len(pelletList) > 0:
         myPos = successor.getAgentState(self.index).getPosition()
-        minDistance = min([self.getMazeDistance(myPos, pellet) for pellet in pelletList])
+        minDistance = mmin([self.getMazeDistance(myPos, pellet) for pellet in pelletList])
         features['distanceToPellet'] = minDistance
     if len(pelletList) > 0:
         myPos = successor.getAgentState(self.index).getPosition()
-        minDistance = min([self.getMazeDistance(myPos, pellet) for pellet in pelletList])
+        minDistance = mmin([self.getMazeDistance(myPos, pellet) for pellet in pelletList])
         features['distanceToPellet'] = minDistance
     if len(ghostList) > 0:
         myPos = successor.getAgentState(self.index).getPosition()
-        minDistance = min([self.getMazeDistance(myPos, pellet) for pellet in pelletList])
+        minDistance = mmin([self.getMazeDistance(myPos, pellet) for pellet in pelletList])
         features['distanceToGhosts'] = minDistance + sum(ghostList)
     return features
   def getWeights(self, gameState, action):

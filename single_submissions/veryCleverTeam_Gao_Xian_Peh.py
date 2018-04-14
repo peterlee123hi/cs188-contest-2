@@ -1,8 +1,8 @@
 """
 Students' Names: Gao Xian Peh, Dylan Rowe
 Contest Number: 2
-Description of Bot: We tried improving the baseline bot by adding more features to both the offensive and defensive strategies. 
-Example features added: 
+Description of Bot: We tried improving the baseline bot by adding more features to both the offensive and defensive strategies.
+Example features added:
 Offensive:
 - Distance to capsules
 - Number of capsules left
@@ -18,7 +18,7 @@ Defensive:
 # educational purposes provided that (1) you do not distribute or publish
 # solutions, (2) you retain this notice, and (3) you provide clear
 # attribution to UC Berkeley, including a link to http://ai.berkeley.edu.
-# 
+#
 # Attribution Information: The Pacman AI projects were developed at UC Berkeley.
 # The core projects and autograders were primarily created by John DeNero
 # (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
@@ -65,8 +65,8 @@ class ReflexCaptureAgent(CaptureAgent):
   """
   def registerInitialState(self, gameState):
     self.start = gameState.getAgentPosition(self.index)
-    CaptureAgent.registerInitialState(self, gameState) 
-    self.registerTeam(self.getTeam(gameState))   
+    CaptureAgent.registerInitialState(self, gameState)
+    self.registerTeam(self.getTeam(gameState))
     self.buddyIndex = [i for i in self.agentsOnTeam if i != self.index][0]
   def chooseAction(self, gameState):
     """
@@ -129,14 +129,19 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
   but it is by no means the best or only way to build an offensive agent.
   """
   def getFeatures(self, gameState, action):
+    def mmin(l):
+      if len(l) > 0:
+        return min(l)
+      else:
+        return 0
     features = util.Counter()
     successor = self.getSuccessor(gameState, action)
-    foodList = self.getFood(successor).asList()    
+    foodList = self.getFood(successor).asList()
     features['successorScore'] = self.getScore(successor)
     # Compute distance to the nearest food
     if len(foodList) > 0: # This should always be True,  but better safe than sorry
       myPos = successor.getAgentState(self.index).getPosition()
-      minDistance = min([self.getMazeDistance(myPos, food) for food in foodList])
+      minDistance = mmin([self.getMazeDistance(myPos, food) for food in foodList])
       features['distanceToFood'] = minDistance
     buddyPos = successor.getAgentState(self.buddyIndex).getPosition()
     budDistance = self.getMazeDistance(myPos, buddyPos)
@@ -144,10 +149,10 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
     # Computes distance to enemies we can see
     enemies = [successor.getAgentState(i) for i in self.getOpponents(successor)]
     dists = [self.getMazeDistance(myPos, a.getPosition()) for a in enemies]
-    features['enemyDistance'] = min(dists)
+    features['enemyDistance'] = mmin(dists)
     goodPosList = [myPos, buddyPos]
     mydistsToCapsules = [self.getMazeDistance(a, c) for a in goodPosList for c in self.getCapsules(gameState)]
-    features['mydistsToCapsules'] = min(mydistsToCapsules)
+    features['mydistsToCapsules'] = mmin(mydistsToCapsules)
     numCapsulesLeft = len(self.getCapsules(gameState))
     features['numCapsulesLeft'] = numCapsulesLeft
     foodLeft = len(self.getFood(gameState).asList())
@@ -176,7 +181,7 @@ class DefensiveReflexAgent(ReflexCaptureAgent):
     features['numInvaders'] = len(invaders)
     if len(invaders) > 0:
       dists = [self.getMazeDistance(myPos, a.getPosition()) for a in invaders]
-      features['invaderDistance'] = min(dists)
+      features['invaderDistance'] = mmin(dists)
     if action == Directions.STOP: features['stop'] = 1
     rev = Directions.REVERSE[gameState.getAgentState(self.index).configuration.direction]
     if action == rev: features['reverse'] = 1
@@ -186,7 +191,7 @@ class DefensiveReflexAgent(ReflexCaptureAgent):
     features['numInvaders'] = len(invaders)
     if len(invaders) > 0:
         dists = [self.getMazeDistance(myPos, a.getPosition()) for a in invaders]
-        features['invaderDistance'] = min(dists)
+        features['invaderDistance'] = mmin(dists)
         # distsToCapsules = [self.getMazeDistance(a.getPosition(), c) for a in invaders for c in self.getCapsulesYouAreDefending(gameState)]
         # features['invaderDistToCapsule'] = min(distsToCapsules)
     myFoodLeft = len(self.getFoodYouAreDefending(gameState).asList())

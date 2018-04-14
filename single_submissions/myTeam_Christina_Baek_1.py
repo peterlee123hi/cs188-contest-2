@@ -190,7 +190,7 @@ class MinimaxAgent(CaptureAgent):
       agentSuccessors = [(state.generateSuccessor(lst[agent], action), action) for action in agentActions]
       successorVals = [(value(successor[0], (agent + 1) % numAgents), successor[1]) for successor in agentSuccessors]
       self.currDepth -= 1
-      return min(successorVals, key=lambda t: t[0])
+      return mmin(successorVals, key=lambda t: t[0])
     rv = value(gameState, 0)
     rootVal = rv[1]
     self.currDepth = 0
@@ -237,6 +237,11 @@ class MinimaxAgent(CaptureAgent):
     a counter or a dictionary.
     """
     return {'successorScore': 1.0}
+def mmin(l):
+  if len(l) > 0:
+    return min(l)
+  else:
+    return 0
 class OffensiveAgent(ReflexCaptureAgent):
   def getFeatures(self, gameState, action):
     def checkRadius(pos, ghostPos, r):
@@ -281,7 +286,7 @@ class OffensiveAgent(ReflexCaptureAgent):
           result += 90
       min_ghost_dist = min(min_ghost_dist, d)
     food_dist = [self.getMazeDistance(pac_pos, food) for food in food_list]
-    minFoodDist = min(food_dist) if len(food_list) else 1
+    minFoodDist = mmin(food_dist) if len(food_list) else 1
     result += pac_state.numCarrying * 100.0
     result += 1000.0 * (successor.getScore() - gameState.getScore()) + 100.0 / minFoodDist + bool * 10.0 * min_ghost_dist + 100.0 * ghost_scared
     features['successorScore'] = result
@@ -316,11 +321,11 @@ class DefensiveAgent(ReflexCaptureAgent):
     else:
       max_food_dist = 0.00000001
     if enemies_pacman:
-        enemies_dist = min([self.distancer.getDistance(e.getPosition(), agent_pos) for e in enemies_pacman])
+        enemies_dist = mmin([self.distancer.getDistance(e.getPosition(), agent_pos) for e in enemies_pacman])
     else:
-        enemies_dist = min([self.distancer.getDistance(e.getPosition(), agent_pos) for e in enemies])
+        enemies_dist = mmin([self.distancer.getDistance(e.getPosition(), agent_pos) for e in enemies])
     if enemies_dist == None:
-      enemies_dist = min([noisy_dists[e] for e in enemies])
+      enemies_dist = mmin([noisy_dists[e] for e in enemies])
     if enemies_dist == None:
       enemies_dist = float("inf")
     enemies_val = enemies_dist if agent_state.scaredTimer > 0 else 1.0/enemies_dist
