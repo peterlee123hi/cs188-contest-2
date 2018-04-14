@@ -102,10 +102,8 @@ if __name__ == '__main__':
             thread = Thread(target=write_output, args=(files[i], files[j]))
             threads.append(thread)
 
-    NUM_THREADS = 64
-    for idx in range(0, len(threads), NUM_THREADS):
-        for thread in threads[idx:min(len(threads),idx+NUM_THREADS)]:
-            thread.start()
-        for thread in threads[idx:min(len(threads),idx+NUM_THREADS)]:
-            thread.join()
+    for thread in threads:
+        thread.start()
+    for thread in threads:
+        thread.join()
 
