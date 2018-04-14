@@ -5,7 +5,7 @@ from os.path import isfile, join
 import subprocess
 from threading import Thread
 
-SUBMISSIONS_DIR = './sample_submissions/'
+SUBMISSIONS_DIR = './submissions/'
 NUM_TRIALS = 15
 
 def removeExtension(file_name):
