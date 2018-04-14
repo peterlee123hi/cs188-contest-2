@@ -5,7 +5,7 @@ from os.path import isfile, join
 import subprocess
 from threading import Thread
 
-SUBMISSIONS_DIR = './submissions/'
+SUBMISSIONS_DIR = './single_submissions/'
 NUM_TRIALS = 15
 
 def removeExtension(file_name):
@@ -99,5 +99,11 @@ if __name__ == '__main__':
     threads = []
     for i in range(len(files)):
         for j in range(i + 1, len(files)):
-            write_output(files[i], files[j])
+            thread = Thread(target=write_output, args=(files[i], files[j]))
+            threads.append(thread)
+
+    for thread in threads:
+        thread.start()
+    for thread in threads:
+        thread.join()
 
