@@ -75,15 +75,16 @@ def write_output(file_a, file_b):
         f.write(file_output)
         print('Done with', file_name_a, 'vs.', file_name_b)
 
-files = sorted([f for f in listdir(SUBMISSIONS_DIR) if isfile(join(SUBMISSIONS_DIR, f)) and f[-1] != 'c'])
+if __name__ == '__main__':
+    files = sorted([f for f in listdir(SUBMISSIONS_DIR) if isfile(join(SUBMISSIONS_DIR, f)) and f[-1] != 'c'])
 
-threads = []
-for i in range(len(files)):
-    for j in range(i + 1, len(files)):
-        thread = Thread(target=write_output, args=(files[i], files[j]))
-        threads.append(thread)
+    threads = []
+    for i in range(len(files)):
+        for j in range(i + 1, len(files)):
+            thread = Thread(target=write_output, args=(files[i], files[j]))
+            threads.append(thread)
 
-for thread in threads:
-    thread.start()
-for thread in threads:
-    thread.join()
+    for thread in threads:
+        thread.start()
+    for thread in threads:
+        thread.join()

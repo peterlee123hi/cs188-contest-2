@@ -1,6 +1,8 @@
 submissions/
+raw_submissions/
 bots/
 staff_bots/
 match_results/
+score
 
 *.pyc
