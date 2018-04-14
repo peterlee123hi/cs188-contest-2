@@ -99,7 +99,7 @@ if __name__ == '__main__':
             process = Process(target=write_output, args=(files[i], files[j]))
             processes.append(process)
 
-    NUM_PROCESSES = 4
+    NUM_PROCESSES = 16
     for idx in range(0, len(processes), NUM_PROCESSES):
         for process in processes[idx:min(idx+NUM_PROCESSES,len(processes))]:
             process.start()

@@ -105,6 +105,8 @@ class ReflexCaptureAgent(CaptureAgent):
           bestAction = action
           bestDist = dist
       return bestAction
+    if len(bestActions) == 0:
+      return random.choice(actions)
     return random.choice(bestActions)
   def getSuccessor(self, gameState, action):
     """
