@@ -152,15 +152,14 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
       pos = (-1, -1)
       for ghost in captors:
         pos = ghost.getPosition()
-      if (x_2, y_2) == pos:
-        if not ghost.scaredTimer:
-          features["scared"] = 0
-          features["enemy"] = 1
-        # if ghost is scared
-        else:
-          features["food"] += 2
-          features["ghost"] += 1
-      elif ghost.scaredTimer:
+        if (x_2, y_2) == pos:
+          if not ghost.scaredTimer:
+            features["scared"] = 0
+            features["enemy"] = 1
+          else:
+            features["food"] += 2
+            features["ghost"] += 1
+        elif ghost.scaredTimer:
           features["scared"] = 0
           features["enemy"] = 1
       for n, m in gameState.getCapsules():

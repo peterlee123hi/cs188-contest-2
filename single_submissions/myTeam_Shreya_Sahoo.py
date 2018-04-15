@@ -65,6 +65,7 @@ class MainAgent(CaptureAgent):
     CaptureAgent.registerInitialState in captureAgents.py.
     '''
     CaptureAgent.registerInitialState(self, gameState)
+    self.start = gameState.getAgentPosition(self.index)
     '''
     Your initialization code goes here, if you need any.
     '''

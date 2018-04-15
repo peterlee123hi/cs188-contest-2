@@ -4,7 +4,7 @@
 # educational purposes provided that (1) you do not distribute or publish
 # solutions, (2) you retain this notice, and (3) you provide clear
 # attribution to UC Berkeley, including a link to http://ai.berkeley.edu.
-# 
+#
 # Attribution Information: The Pacman AI projects were developed at UC Berkeley.
 # The core projects and autograders were primarily created by John DeNero
 # (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
@@ -59,11 +59,11 @@ class DefenseAgent(CaptureAgent):
       invaders = [a for a in enemies if a.isPacman and a.getPosition() != None]
       myState = gameState.getAgentState(self.index)
       myPos = myState.getPosition()
-      closestFoodDist = min(map(lambda x: self.getMazeDistance(x, myPos), self.getFood(gameState).asList()))
+      closestFoodDist = mmin(map(lambda x: self.getMazeDistance(x, myPos), self.getFood(gameState).asList()))
       if myState.isPacman:
          return -5
       if invaders:
-          invaderDist = min([self.getMazeDistance(myPos, e.getPosition()) for e in invaders if e.getPosition() != None])
+          invaderDist = mmin([self.getMazeDistance(myPos, e.getPosition()) for e in invaders if e.getPosition() != None])
           if invaderDist == 0:
               return 10
           else:
@@ -139,6 +139,10 @@ class DefenseAgent(CaptureAgent):
                 alpha = max(alpha, v)
         return v, bestAction
     return calcWithPrune(gameState, depth, 0, -sys.maxint, sys.maxint)[1]
+def mmin(l):
+  if len(l) > 0:
+    return min(l)
+  return 0
 class OffenseAgent(CaptureAgent):
   """
   A Dummy agent to serve as an example of the necessary agent structure.
@@ -282,12 +286,12 @@ class OffenseAgent(CaptureAgent):
     ghosts = [a for a in enemies if not a.isPacman and a.getPosition() != None]
     GhostStates = ghosts
     newScaredTimes = [ghostState.scaredTimer for ghostState in GhostStates]
-    closestFoodDist = min(map(lambda x: self.getMazeDistance(x, myPos), myFood.asList()))
+    closestFoodDist = mmin(map(lambda x: self.getMazeDistance(x, myPos), myFood.asList()))
     newGhostPositions = [g.getPosition() for g in ghosts]
     closeFoodScore = 1 / float(closestFoodDist) if not myFood[int(myPos[0])][int(myPos[1])] else 20
     lenCaps = len(self.getCapsules(gameState))
     if self.getCapsules(gameState):
-        closestCapDist = min(map(lambda x: self.getMazeDistance(x, myPos), self.getCapsules(gameState)))
+        closestCapDist = mmin(map(lambda x: self.getMazeDistance(x, myPos), self.getCapsules(gameState)))
         capScore = 1/float(closestCapDist)
     else:
         closestCapDist = 0
